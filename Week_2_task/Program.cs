@@ -15,12 +15,22 @@ namespace Week_2_task
             list.AddTail(1);
             list.AddTail(2);
             list.AddTail(7);
+            list.AddTail(25);
             list.AddTail(15);
             list.printLinkedList();
 
             Console.WriteLine(list.Check(7));
             list.RemoveHead(15);
             list.printLinkedList();
+            
+            StackWithLinkedList<string> stack1 = new StackWithLinkedList<string>();
+            stack1.push("ant");
+            stack1.push("lizard");
+            stack1.push("cat");
+            stack1.push("rat");
+            stack1.printStackNode();
+
+            Console.WriteLine(stack1.Peek());
 
            
         }
